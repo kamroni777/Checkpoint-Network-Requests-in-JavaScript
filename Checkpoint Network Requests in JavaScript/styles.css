@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#city-input {
+  padding: 12px 15px;
+  width: 70%;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+  font-size: 1rem;
+}
+
+#search-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background: #fff;
+  color: #5151e5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#search-btn:hover {
+  background: #e0e0e0;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.location h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.location p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+}
+
+.temperature span {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#weather-icon {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.details {
+  text-align: right;
+}
+
+#weather-desc {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.extra-info p {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.extra-info i {
+  margin-right: 8px;
+  width: 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .weather-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .extra-info p {
+    justify-content: center;
+  }
+}
